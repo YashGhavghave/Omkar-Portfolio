@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -6,7 +6,11 @@ export const metadata: Metadata = {
   description: 'Onkar Raut – Video Editor & Content Creator helping brands and creators make content that captures attention.',
   keywords: 'video editor, content creator, reels, YouTube, brand commercials, Onkar Raut, REWIRED',
   authors: [{ name: 'Onkar Raut' }],
-  viewport: 'width=device-width, initial-scale=1.0',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
